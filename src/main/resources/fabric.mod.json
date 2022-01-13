@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "saphire",
+  "version": "${version}",
+
+  "name": "Saphire Mod",
+  "description": "This mod adds saphires yay.",
+  "authors": [
+    "ThisIan/Renkaliko its the same person"
+  ],
+  "contact": {
+    "homepage": "https://github.com/ThisIan",
+    "sources": "https://github.com/ThisIan/Saphire"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "thisian.saphire.SaphireMod"
+    ],
+    "client": [
+      "thisian.saphire.SaphireClient"
+    ]
+  },
+  "mixins": [
+    "saphire.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
